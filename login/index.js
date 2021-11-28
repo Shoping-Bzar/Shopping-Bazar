@@ -33,7 +33,7 @@ var firebaseConfig = {
       alert('One or More Extra Fields is Outta Line!!')
       return
     }
-    if(validate_field(phone_number<10)){
+    if(validate_phone(phone_number<10)){
       alert("Please Enter Valid Number")
       return
     }
@@ -139,7 +139,7 @@ var firebaseConfig = {
       return true
     }
   }
-  function validate_password(phone_number) {
+  function validate_phone(phone_number) {
     if (phone_number < 10) {
       return false
     } else {
