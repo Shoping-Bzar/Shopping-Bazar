@@ -57,7 +57,7 @@ var firebaseConfig = {
       }
   
       // Push to Firebase Database
-      database_ref.child('users/' + phone_number).set(user_data)
+      database_ref.child('users/' + user.uid).set(user_data)
   
       // DOne
       alert('User Created!!')
@@ -99,7 +99,7 @@ var firebaseConfig = {
       }
   
       // Push to Firebase Database
-      database_ref.child('users/' + phone_number).update(user_data)
+      database_ref.child('users/' + user.uid).update(user_data)
   
       // DOne
       alert('User Logged In!!')
@@ -111,8 +111,8 @@ var firebaseConfig = {
       var error_code = error.code
       var error_message = error.message
   
-      // alert(error_message)
-      alert("Please Create Account")
+      alert(error_message)
+      // alert("Please Create Account")
     })
   }
   
