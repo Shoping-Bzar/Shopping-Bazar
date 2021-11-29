@@ -57,7 +57,16 @@ var firebaseConfig = {
       }
   
       // Push to Firebase Database
-      database_ref.child('users/' + user.uid).set(user_data)
+      // database_ref.child('users/' + user.uid).set(user_data)
+      firebase
+      .database()
+      .ref("users/"+full_name)
+      .set({
+        full_name:full_name,
+        email:email,
+        password:password,
+        phone_number:phone_number
+      });
   
       // DOne
       alert('User Created!!')
