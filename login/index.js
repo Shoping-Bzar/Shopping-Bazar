@@ -120,8 +120,8 @@ var firebaseConfig = {
       var error_code = error.code
       var error_message = error.message
   
-      alert(error_message)
-      // alert("Please Create Account")
+      // alert(error_message)
+      alert("Please Create Account")
     })
   }
   
