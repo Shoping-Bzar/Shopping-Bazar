@@ -52,12 +52,12 @@ var firebaseConfig = {
         email : email,
         full_name : full_name,
         phone_number : phone_number,
-        password:password,
+        password : password,
         last_login : Date.now()
       }
   
       // Push to Firebase Database
-      database_ref.child('users/' + full_name).set(user_data)
+      database_ref.child('users/' + user.uid).set(user_data)
   
       // DOne
       alert('User Created!!')
@@ -99,7 +99,7 @@ var firebaseConfig = {
       }
   
       // Push to Firebase Database
-      database_ref.child('users/' + full_name).update(user_data)
+      database_ref.child('users/' + user.uid).update(user_data)
   
       // DOne
       alert('User Logged In!!')
