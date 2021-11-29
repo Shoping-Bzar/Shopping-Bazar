@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 90vh;
+    /* height: 95vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,12 @@
     height: 600px;
     background-color: skyblue;
     border-radius: 20px;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 
 }
 .container .feed-box h1{
@@ -45,4 +50,6 @@ input{
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    /* margin-bottom: 50px; */
 }
+
