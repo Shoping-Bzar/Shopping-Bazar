@@ -112,7 +112,7 @@ var firebaseConfig = {
   
       // DOne
       alert('User Logged In!!')
-      window.location.href ='../index.html';
+      window.location.href ='./home.html';
   
     })
     .catch(function(error) {
