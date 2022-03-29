@@ -70,7 +70,7 @@ var firebaseConfig = {
   
       // DOne
       alert('User Created!!')
-      window.location.href ='../index.html';
+      window.location.href ='./home.html';
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
